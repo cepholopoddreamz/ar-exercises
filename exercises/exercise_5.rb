@@ -19,10 +19,10 @@ puts "----------"
 totalrevenues = Store.sum(:annual_revenue)
 puts totalrevenues
 
+#totalrevenues
+
 averagerev = totalrevenues/Store.count
 puts averagerev
 
 
 puts Store.where("annual_revenue > ?", 1000000).count
-
-
